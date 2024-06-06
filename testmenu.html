@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css2.css">
+    <title>Document</title>
+    <style>
+        .flexx {
+            display: flex;
+        }
+        .card-body {
+            height: auto; /* Thay đổi chiều cao cố định thành auto */
+            overflow-wrap: break-word; /* Đảm bảo từ không tràn ra khỏi khung */
+        } 
+        .container {
+            max-width: 1500px; /* Kích thước tối đa của container */
+            margin: 0 auto; /* Canh giữa container */
+            padding: 20px; /* Khoảng cách nội dung với viền của container */
+        }
+        .flexx{
+            display: flex;
+        }
+
+        /* .navbar.hidden {
+            top: -106px;
+        } */
+        .container {
+            max-width: 1500px; /* Kích thước tối đa của container */
+            margin: 0 auto; /* Canh giữa container */
+            padding: 20px; /* Khoảng cách nội dung với viền của container */
+        }
+        .CHUTO{
+            font-size: 39px;
+            font-weight: 500;
+        }
+        .button2 {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 200px;
+            height: 50px;
+        }
+        /* CSS cho thanh menu */
+/* .thanhmenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 9999; 
+} */
+
+.chonlua {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .an {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .hien {
+            max-height: 1000px;
+            transition: max-height 0.3s ease-in;
+        }
+
+        .nutxem {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 200px;
+            height: 50px;
+        }
+        
+        .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 9999; /* Đảm bảo thanh menu hiển thị trên cùng */
+}
+
+.navbar.hidden {
+    top: -100px; /* Ẩn thanh menu khi cuộn lên */
+}
+        
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="mauhong">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="0" class="chu1">SMART PHONE</a> -->
+      <img src="icon1.png" alt="" class="navbar-brand" style="width: 48px;height:60px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="test2.html">Trang chủ</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">IOS</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#android">Android</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Phụ kiện
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ốp lưng</a></li>
+              <li><a class="dropdown-item" href="#">Dây sạc ,cáp sạc</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Khác</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#android" data-bs-toggle="modal" data-bs-target="#myModal">ĐĂNG NHẬP</a>
+          </li>
+         
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="slidee">
+    <div  id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            
+            <img src="trang.jpg" class="d-block w-100" alt="...">
+           
+            <video class="video-overlay d-block w-100" autoplay loop muted>
+              <source src="trailerip15.mp4" type="video/mp4">
+            </video>
+        
+            <div class="carousel-caption d-none d-md-block" >
+              <h1 style="font-size: 90px;">iPhone 15</h1>
+              <p id="s24" style="font-size: 30px;">Apple ra mắt iPhone 15 và iPhone 15 Plus</p>
+              
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="trang.jpg" class="d-block w-100" alt="...">
+
+            <video class="video-overlay d-block w-100" autoplay loop muted>
+              <source src="trailerss.webm" type="video/mp4">
+            </video>
+
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="font-size: 60px;">Samsung s24 Ultra</h5>
+              <p style="font-size: 30px;">Siêu phẩm Samsung Galaxy S24 Ultra Chính hãng chính thức ra mắt trên toàn cầu vào 1/2024. 
+                Thiết bị sở hữu cấu hình siêu khủng với các tính năng AI hiện đại và cao cấp nhất thế giới smartphone.</p>
+            </div>
+          </div>
+         
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </div>
+
+
+  <div class="container">
+    <section class="myheader">
+        <!-- Nội dung phần header -->
+    </section>
+
+    <section class="mymainmenu">
+        <!-- Nội dung phần main menu -->
+    </section>
+
+    <section class="mymaincontent">
+        <!-- Nội dung phần main content -->
+    </section>
+
+    <section class="myfooter">
+       
+
+      <div class="container" style=" display: flex; align-items: center;">
+        <div class="row" style="display: flex; flex-direction: row; align-items: center;">
+          <div style="margin-right: 10px;">
+            <b style="font-size: 45px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
+              Sản phẩm bán chạy tháng 5 gọi tên :
+            </b>
+          </div>
+          <div>
+            <b style="font-size: 45px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
+              SamSung s24 Ultra
+            </b>
+          </div>
+        </div>
+      
+      </div>
+        <div style="font-size: 20px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;margin-left: 20px;text-align: justify;">
+           Cùng gặp gỡ Galaxy S24 Ultra, một thiết kế tối ưu của dòng Galaxy Ultra với lớp vỏ ngoài bằng titan mới và màn hình phẳng 6.8" Xứng đáng là một tuyệt tác thiết kế hoàn hảo.
+        </div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-xl-6" >
+                <div class="card">
+                    <img src="samsungs24.png" class="card-img-top hover-effectt" alt="Samsung S24 Ultra">
+                    <div class="card-body">
+                        <h5 class="card-title">Sản phẩm bán chạy tháng 5: Samsung S24 Ultra</h5>
+                        <p style="text-align: justify;" class="card-text">Chiêm ngưỡng thiết kế sang trọng được nâng cấp của Galaxy S24 Ultra - một tấm titan bền bỉ mạnh mẽ được gắn vào khung viền. Samsung S24 Ultra là siêu phẩm smartphone đỉnh cao mở đầu năm 2024 đến từ nhà Samsung với chip Snapdragon 8 Gen 3 For Galaxy mạnh mẽ, công nghệ tương lai Galaxy AI cùng khung viền Titan đẳng cấp hứa hẹn sẽ mang tới nhiều sự thay đổi lớn về mặt thiết kế và cấu hình. SS Galaxy S24 bản Ultra sở hữu màn hình 6.8 inch Dynamic AMOLED 2X tần số quét 120Hz. Máy cũng sở hữu camera chính 200MP, camera zoom quang học 50MP, camera tele 10MP và camera góc siêu rộng 12MP.</p>
+                        <p style="margin-top: 20px;text-align: justify;">Nhìn chung, phiên bản Ultra của S24 hứa hẹn sẽ trở thành lựa chọn hấp dẫn trong phân khúc smartphone cao cấp với các cải tiến đáng chú ý cả về màn hình, hiệu suất, camera và thời lượng PIN. Hãy cùng đi vào chi tiết nhé.</p>
+                        <br> <br><br><br><br><br><br> <br><br>
+                    </div>
+                </div>
+            </div>
+          
+               
+                <div class="card col-md-5 col-xl-6 cachle1" >
+                    <img src="samsungs24a.png" class="card-img-top" alt="...">
+                 
+                        <h5 class="card-title">Thông số kỹ thuật Samsung S24 ULtra</h5>
+                        <p class="card-text">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">STT</th>
+                                    <th scope="col">Thành phần</th>
+                                    <th scope="col">Cấu hình</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td>1</td>
+                                    <td>Màn hình</td>
+                                    <td>6.8" inch-Dynamic AMOLED 2X,Tần số quét 120Hz</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td>2</td>
+                                    <td>Hệ điều hành</td>
+                                    <td>Android 14</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td>3</td>
+                                    <td>Camera sau</td>
+                                    <td>Chính 200 MP & Phụ 50 MP, 12 MP, 10 MP</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td>4</td>
+                                    <td>Camera trước</td>
+                                    <td>12 MP</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td>5</td>
+                                    <td>Chip</td>
+                                    <td>Snapdragon 8 Gen 3 for Galaxy</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td>6</td>
+                                    <td>RAM</td>
+                                    <td>12 GB</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td>7</td>
+                                    <td>ROM</td>
+                                    <td>256 GB</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td>8</td>
+                                    <td>Pin, Sạc </td>
+                                    <td>5000 mAh, 45 W</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td>9</td>
+                                    <td>Tương thích </td>
+                                    <td>Bút SPEN - tích hợp sẵn lên máy</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td>10</td>
+                                    <td>Hãng </td>
+                                    <td id="android">Samsung </td>
+                                  </tr>
+        
+                                 
+                                </tbody>
+                              </table>
+                        </p>
+                        <!-- <a href="https://www.samsung.com/vn/smartphones/galaxy-s24-ultra/specs/" class="btn btn-primary" id="android">Xem thêm về thông số kỹ thuật</a> -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>   
+    <div class="container">
+      <div class="row" style="background-color: rgb(218, 234, 234);margin-left: 2px;">
+        <div class="col-md-3 col-xl-2 col-lg-4" style="font-size: 50px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+          <p><b>iPhone </b></p>
+        </div>
+        <div class="col-md-9 col-xl-10 col-lg-8" style="font-size: 30px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;margin-top: 18px;">
+          <p><b>Được thiết kế để ai cũng mê</b></p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="container">
+      <div class="row">
+        <div>
+          <video class=" d-block w-100 col-md-12 col-xl-12" autoplay loop muted>
+            <source src="titan.mp4" type="video/mp4">
+          </video>
+      </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+<div class="row">
+     <div class="col-xl-3 col-lg-3">
+      <center>  <img src="a17pro.png" alt="lỗi ảnh"></center>
+     
+     </div>
+     <div class="col-xl-9 col-lg-7">
+    <p style="font-size: 20px;text-align: justify;">A17 Pro là một đẳng cấp hoàn toàn mới của chip iPhone, mang lại hiệu năng đồ họa tốt nhất của Apple, tính đến thời điểm này.
+
+      Các game di động sẽ vô cùng sống động và chân thực, với môi trường chi tiết đến khó tin và các nhân vật sống động hơn. Với tốc độ và khả năng tiết kiệm điện dẫn đầu thị trường, A17 Pro mạnh mẽ kế thừa thế hệ trước.</p>
+     </div>
+    
+</div>
+    </div>
+     
+
+    <div class="container">
+      <div class="row">
+           <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1" >
+           <p>&nbsp;</p>
+           
+           </div>
+           <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10" >
+          <p ><hr></p>
+           </div>
+          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1" >
+<p>&nbsp;</p>
+          </div>
+      </div>
+          </div>
+
+   
+
+    <div class="container">
+      <div class="row">
+          
+           <div class="col-xl-8 col-lg-8">
+          <p style="font-size: 20px;text-align: justify;">Camera Chính 48MP tiên tiến hơn bao giờ hết, giúp bạn chụp được những bức ảnh có độ phân giải siêu
+             cao với độ chi tiết và màu sắc ở một đẳng cấp mới.
+
+            Bạn sẽ nhận thấy nhiều cải tiến trong ảnh chân dung. Và giờ đây, bạn không còn phải chuyển sang chế độ Chân Dung nữa. 
+            Nếu chủ thể được chụp là người, thú cưng như chó hay mèo, iPhone sẽ tự động thu nhận thông tin chiều sâu. Nhờ đó, bạn
+             có thể chọn để ngay lập tức xem ảnh vừa chụp như ảnh chân dung, với hiệu ứng làm mờ đầy nghệ thuật. 
+            Hoặc sau đó bạn có thể chỉnh ảnh thường thành ảnh chân dung trong ứng dụng Ảnh.</p>
+           </div>
+           <div class="col-xl-4 col-lg-4 " style=" ">
+            <center>
+               <img src="camera.png" alt="lỗi ảnh" style="width: 400px;">
+            </center>
+           
+           </div>
+      </div>
+          </div>
+
+
+
+
+
+          <div class="container">
+            <div class="row">
+                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1" >
+                 <p>&nbsp;</p>
+                 
+                 </div>
+                 <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10" >
+                <p ><hr></p>
+                 </div>
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1" >
+      <p>&nbsp;</p>
+                </div>
+            </div>
+                </div>
+
+
+
+                <div class="container">
+                  <div class="row">
+                       <div class="col-xl-3 col-lg-3">
+                        <center>  <img src="typec.jpg" alt="lỗi ảnh" style="width:300px;"></center>
+                       
+                       </div>
+                       <div class="col-xl-9 col-lg-7">
+                      <p style="font-size: 20px;text-align: justify;">Cáp Type-C là một giải pháp tiện lợi cho việc kết nối các thiết bị số của bạn. Bạn không cần phải mua nhiều loại cáp khác nhau cho mỗi thiết bị, mà chỉ cần một cáp Type-C duy nhất. Cáp này có thể sử dụng cho nhiều loại thiết bị như điện thoại, máy tính xách tay, tai nghe, máy chơi game, và nhiều hơn nữa..</p>
+                       </div>
+                      
+                  </div>
+                      </div>
+
+
+
+                      <div class="container">
+                        <div class="row">
+                             <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1" >
+                             <p>&nbsp;</p>
+                             
+                             </div>
+                             <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10" >
+                            <p ><hr></p>
+                             </div>
+                            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1" >
+                  <p>&nbsp;</p>
+                            </div>
+                        </div>
+                            </div>
+            
+
+
+
+
+ 
+<div><center style="font-size: 33px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight: 20px;"><p>Trong hộp iPhone 15 có gì</p></center></div>
+   
+<div class="container">
+  <div class="row">
+     <div class="col-xl-6 col-lg-6 col-md-6">
+      <center><img src="15xanh.png" alt="" style="width: 300px;"></center>
+      <br>
+      <center>iPhone 15</center>
+     </div>
+     <div class="col-xl-6 col-lg-6 col-md-6">
+      <center><img src="cap.png" alt=""></center> <br>
+      <center>Cáp USB-C sang Lightning</center>
+     </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+   <div class="row">
+    <div style="background-color:#E5F7FF ;">
+      <div class="container">
+    <div class="row">
+         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2"><center><img src="caheo.png" alt="" style="width: 120px;"></center></div>
+         <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10"><p style="font-size: 33px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight: 20px;"> BIG WHALE</p>
+        <p style="margin-top: 5px;font-size: 18px;">Tự hào là trang web cung cấp thông chính xác và nhanh nhất về các sản phẩm công nghệ.</p></div>
+    </div>
+      </div>
+    
+    
+      
+    
+            <div class="container">
+              <div class="row">
+                   <div class="col-xl-6 col-lg-6 col-md-6 " style="backdrop-filter: blue;"><p><center style="font-size: 22px;">Liên hệ chúng tôi qua</center></p>
+                    <center>   <button style="width: 250px; background-color: rgb(99, 171, 208); border-radius: 25px;height: 40px;"><a href="https://www.facebook.com/mtpyps.tungbinh" style="display: block;
+                      text-align: center;
+                      text-decoration: none;
+                      color: white;">Facebook</a></button></center> <br>
+                        <center>   <button style="width: 250px; background-color: rgb(75, 155, 247); border-radius: 25px;height: 40px;"><a href="https://www.w3schools.com/bootstrap5/bootstrap_buttons.php" style="display: block;
+                          text-align: center;
+                          text-decoration: none;
+                          color: white;">Zalo : 0387888999</a></button></center> <br>
+                            <center>   <button style="width: 250px; background-color: rgb(237, 138, 207); border-radius: 25px;height: 40px;"><a href="https://www.instagram.com/" style="display: block;
+                              text-align: center;
+                              text-decoration: none;
+                              color: white;">Instagram : big_whale</a></button></center>
+                  </div>
+                   <div class="col-xl-6 col-lg-6 col-md-6 " ><p><center style="font-size: 22px;">BIG WHALE</center></p>
+                  <center><p>Địa chỉ : <a href="https://www.google.com/maps/search/%C4%91%E1%BA%A1i+h%E1%BB%8Dc+Vi%E1%BB%87t+H
+                    %C3%A0n/@15.9765027,108.2500434,17z/data=!3m1!4b1?entry=ttu">470-Trần Hưng Đạo</a></p></center>
+                    <center><p>Số điện thoại liên hệ 1: 0392176320</p></center>
+                    <center><p>Số điện thoại liên hệ 2: 0394126584</p></center>
+                    <center><p>Email : bigwhale0810@gmail.com</p></center></div>
+           
+    </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        var lastScrollTop = 0;
+        window.addEventListener("scroll", function(){ // Bắt sự kiện scroll
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop; // Lấy vị trí scroll hiện tại của trang
+    
+            if (currentScroll > lastScrollTop){ // Nếu đang cuộn xuống
+                document.getElementById("mauhong").style.top = "-80px"; // Ẩn thanh menu
+            } else { // Nếu đang cuộn lên
+                document.getElementById("mauhong").style.top = "0"; // Hiển thị thanh menu
+            }
+            lastScrollTop = currentScroll; // Lưu vị trí scroll hiện tại để so sánh ở lần cuộn tiếp theo
+        }, false);
+    </script>
+</body>
+</html>

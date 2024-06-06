@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css2.css">
+    <title>Document</title>
+    <style>
+        .flexx {
+            display: flex;
+        }
+        .card-body {
+            height: auto; /* Thay đổi chiều cao cố định thành auto */
+            overflow-wrap: break-word; /* Đảm bảo từ không tràn ra khỏi khung */
+        } 
+        .container {
+            max-width: 1500px; /* Kích thước tối đa của container */
+            margin: 0 auto; /* Canh giữa container */
+            padding: 20px; /* Khoảng cách nội dung với viền của container */
+        }
+        .flexx{
+            display: flex;
+        }
+
+        /* .navbar.hidden {
+            top: -106px;
+        } */
+        .container {
+            max-width: 1500px; /* Kích thước tối đa của container */
+            margin: 0 auto; /* Canh giữa container */
+            padding: 20px; /* Khoảng cách nội dung với viền của container */
+        }
+        .CHUTO{
+            font-size: 39px;
+            font-weight: 500;
+        }
+        .button2 {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 200px;
+            height: 50px;
+        }
+        /* CSS cho thanh menu */
+/* .thanhmenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 9999; 
+} */
+
+.chonlua {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .an {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .hien {
+            max-height: 1000px;
+            transition: max-height 0.3s ease-in;
+        }
+
+        .nutxem {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 200px;
+            height: 50px;
+        }
+        
+        .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 9999; /* Đảm bảo thanh menu hiển thị trên cùng */
+}
+
+.navbar.hidden {
+    top: -100px; /* Ẩn thanh menu khi cuộn lên */
+}
+        
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="mauhong">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="0" class="chu1">SMART PHONE</a> -->
+      <img src="icon1.png" alt="" class="navbar-brand" style="width: 48px;height:60px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="test2.html">Trang chủ</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">IOS</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#android">Android</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Phụ kiện
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ốp lưng</a></li>
+              <li><a class="dropdown-item" href="#">Dây sạc ,cáp sạc</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Khác</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#android" data-bs-toggle="modal" data-bs-target="#myModal">ĐĂNG NHẬP</a>
+          </li>
+         
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        var lastScrollTop = 0;
+        window.addEventListener("scroll", function(){ // Bắt sự kiện scroll
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop; // Lấy vị trí scroll hiện tại của trang
+    
+            if (currentScroll > lastScrollTop){ // Nếu đang cuộn xuống
+                document.getElementById("mauhong").style.top = "-80px"; // Ẩn thanh menu
+            } else { // Nếu đang cuộn lên
+                document.getElementById("mauhong").style.top = "0"; // Hiển thị thanh menu
+            }
+            lastScrollTop = currentScroll; // Lưu vị trí scroll hiện tại để so sánh ở lần cuộn tiếp theo
+        }, false);
+    </script>
+</body>
+</html>

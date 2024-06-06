@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css2.css">
+    <title>Document</title>
+    <style>
+        .flexx {
+            display: flex;
+        }
+        .card-body {
+            height: auto; /* Thay đổi chiều cao cố định thành auto */
+            overflow-wrap: break-word; /* Đảm bảo từ không tràn ra khỏi khung */
+        } 
+        .container {
+            max-width: 1500px; /* Kích thước tối đa của container */
+            margin: 0 auto; /* Canh giữa container */
+            padding: 20px; /* Khoảng cách nội dung với viền của container */
+        }
+        .flexx{
+            display: flex;
+        }
+
+        /* .navbar.hidden {
+            top: -106px;
+        } */
+        .container {
+            max-width: 1500px; /* Kích thước tối đa của container */
+            margin: 0 auto; /* Canh giữa container */
+            padding: 20px; /* Khoảng cách nội dung với viền của container */
+        }
+        .CHUTO{
+            font-size: 39px;
+            font-weight: 500;
+        }
+        .button2 {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 200px;
+            height: 50px;
+        }
+        /* CSS cho thanh menu */
+/* .thanhmenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 9999; 
+} */
+
+.chonlua {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .an {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .hien {
+            max-height: 1000px;
+            transition: max-height 0.3s ease-in;
+        }
+
+        .nutxem {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 200px;
+            height: 50px;
+        }
+        
+        .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 9999; /* Đảm bảo thanh menu hiển thị trên cùng */
+}
+
+.navbar.hidden {
+    top: -100px; /* Ẩn thanh menu khi cuộn lên */
+}
+        
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="mauhong">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="0" class="chu1">SMART PHONE</a> -->
+      <img src="icon1.png" alt="" class="navbar-brand" style="width: 48px;height:60px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Trang chủ</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="test6.html">IOS</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="test3.html">Android</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Phụ kiện
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ốp lưng</a></li>
+              <li><a class="dropdown-item" href="#">Dây sạc ,cáp sạc</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Khác</a></li>
+            </ul>
+          </li> -->
+
+         <li class="nav-item">
+            <a class="nav-link" href="test7.html" style="color: rgb(65, 234, 121);font-weight: 600;">Đăng nhập</a>
+          </li>
+         
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div style="height: 50px;">
+
+  </div>
+
+
+
+ 
+
+
+
+
+  <div class="container" style="max-width: 100%; width: 100%;">
+    <div class="row">
+      <div>
+        <center><img src="adr1.svg" alt="" style="max-width: 100%; height: auto;"></center>
+      </div>
+    </div>
+  </div>
+
+
+<br>
+
+
+<center>
+    <div style="max-width: 1000px;">
+    <center><b><p style="font-size: 30px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">CÙNG CHIÊM NGƯỠNG CÁC SẢN PHẨM SỬ DỤNG HỆ ĐỀU HÀNH ANDROID</p></b></center>
+</div>
+</center>
+
+
+
+
+
+
+<div class="container" >
+    <div class="row">
+<!--Bắt đầu  -->
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+    <div class="card image-container"><br>
+        <a href="#s24">                      <img src ="samsungs24bb.png" class="card-img-top hover-effectt" alt="..." >
+</a>
+         <div class="card-body" style="height: 350px;">
+           <br>
+             <h5 class="card-title"><center><b>Samsung S24 Ultra 5G</b></center></h5>
+             <p class="card-text"> 
+              
+              
+               <div style="display: flex;">
+        <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+
+            <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+
+               </div>
+               <div style="display: flex; align-items: center;">
+                 <div style="display: flex; align-items: center;"class="green-box1">
+                   256GB
+                            </div>&nbsp;
+                            <div style="display: flex; align-items: center;"class="green-box">
+                             512GB
+                                      </div>
+                                      &nbsp;
+                                      <div style="display: flex; align-items: center;"class="green-box">
+                                       1T
+                                                </div>
+                 </div> 
+                 <div style="display: flex; align-items: center;margin-top: 10px;">
+                   <p>Giá tham khảo:</p>
+                   <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                   
+              </div>
+              <div style="margin-top: -15px; font-weight: normal;">
+               <ul class="ul2">
+                 <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                 <li>RAM: 8 GB</li>
+                 <li>ROM: 256 GB</li>
+                 <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                 <li>Camera trước :12MP</li>
+                 <li>Pin 5000 mAh ,sạc 45 W</li>
+             </ul>
+             </div>
+              <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+               <span class="star1">&#9733;</span>
+               <span class="star1">&#9733;</span>
+               <span class="star1">&#9733;</span>
+               <span class="star1">&#9733;</span>
+               <span class="star half">&#9733;</span>
+           </div>
+
+          
+             </p>
+             
+           
+         </div>
+     </div>
+</div>
+<!--  -->
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+    <div class="card image-container"><br>
+        <img src="findn22.jpg" class="card-img-top hover-effectt" alt="..." >
+        <div class="card-body" style="height: 350px;">
+          <br>
+            <h5 class="card-title"><center><b>OPPO Find N2 Flip 5G</b></center></h5>
+            <p class="card-text"> 
+             
+             
+              <div style="display: flex;">
+       <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+
+           <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+
+              </div>
+              <div style="display: flex; align-items: center;">
+                <div style="display: flex; align-items: center;"class="green-box1">
+                  128GB
+                           </div>&nbsp;
+                           <div style="display: flex; align-items: center;"class="green-box">
+                            256GB
+                                     </div>
+                                     &nbsp;
+                                    
+                </div> 
+                <div style="display: flex; align-items: center;margin-top: 10px;">
+                  <p>Giá tham khảo:</p>
+                  <p style="color: red;font-size: 18px;">&nbsp; 18.990.000</p>
+                  
+             </div>
+             <div style="margin-top: -15px; font-weight: normal;">
+              <ul class="ul2">
+               <li>Màn hình phụ 3.26"</li>
+                <li>Chip MediaTek Dimensity 9000+ 8 nhân</li>
+                <li>RAM: 8 GB</li>
+                <li>ROM: 256 GB</li>
+                <li>Camera sau :Chính 50 MP & Phụ 8 MP</li>
+                <li>Camera trước :32MP</li>
+                <li>Pin 4300 mAh ,sạc 44 W</li>
+            </ul>
+            </div>
+             <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star half">&#9733;</span>
+          </div>
+
+         
+            </p>
+            
+          
+        </div>
+    </div>
+</div>
+<!--  -->
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+    <div class="card image-container"><br>
+        <img src="opponeno111.jpg" class="card-img-top hover-effectt" alt="..." >
+        <div class="card-body" style="height: 350px;">
+          <br>
+            <h5 class="card-title"><center><b>OPPO Reno11 Pro 5G </b></center></h5>
+            <p class="card-text"> 
+             
+             
+              <div style="display: flex;">
+       <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+
+           <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+
+              </div>
+              <div style="display: flex; align-items: center;">
+                <div style="display: flex; align-items: center;"class="green-box1">
+                  256GB
+                           </div>&nbsp;
+                           <div style="display: flex; align-items: center;"class="green-box">
+                            512GB
+                                     </div>
+                                     &nbsp;
+                                     <div style="display: flex; align-items: center;"class="green-box">
+                                      1T
+                                               </div>
+                </div> 
+                <div style="display: flex; align-items: center;margin-top: 10px;">
+                  <p>Giá tham khảo:</p>
+                  <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                  
+             </div>
+             <div style="margin-top: -15px; font-weight: normal;">
+              <ul class="ul2">
+                <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                <li>RAM: 8 GB</li>
+                <li>ROM: 256 GB</li>
+                <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                <li>Camera trước :12MP</li>
+                <li>Pin 5000 mAh ,sạc 45 W</li>
+            </ul>
+            </div>
+             <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star half">&#9733;</span>
+          </div>
+
+         
+            </p>
+            
+          
+        </div>
+    </div>
+</div>
+<!--  -->
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+    <div class="card image-container"><br>
+        <img src="reno11ff.png" class="card-img-top hover-effectt" alt="..." >
+        <div class="card-body" style="height: 350px;">
+          <br>
+            <h5 class="card-title"><center><b> OPPO Reno11 F 5G </b></center></h5>
+            <p class="card-text"> 
+             
+             
+              <div style="display: flex;">
+       <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+
+           <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+
+              </div>
+              <div style="display: flex; align-items: center;">
+                <div style="display: flex; align-items: center;"class="green-box1">
+                  256GB
+                           </div>&nbsp;
+                           <div style="display: flex; align-items: center;"class="green-box">
+                            512GB
+                                     </div>
+                                     &nbsp;
+                                     <div style="display: flex; align-items: center;"class="green-box">
+                                      1T
+                                               </div>
+                </div> 
+                <div style="display: flex; align-items: center;margin-top: 10px;">
+                  <p>Giá tham khảo:</p>
+                  <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                  
+             </div>
+             <div style="margin-top: -15px; font-weight: normal;">
+              <ul class="ul2">
+                <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                <li>RAM: 8 GB</li>
+                <li>ROM: 256 GB</li>
+                <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                <li>Camera trước :12MP</li>
+                <li>Pin 5000 mAh ,sạc 45 W</li>
+            </ul>
+            </div>
+             <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star half">&#9733;</span>
+          </div>
+
+         
+            </p>
+            
+          
+        </div>
+    </div>
+</div>
+<!--  -->
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+    <div class="card image-container"><br>
+        <img src="remi11.jpg" class="card-img-top hover-effectt" alt="..." >
+        <div class="card-body" style="height: 350px;">
+          <br>
+            <h5 class="card-title"><center><b> Redmi Note 13 Pro</b></center></h5>
+            <p class="card-text"> 
+             
+             
+              <div style="display: flex;">
+       <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+
+           <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+
+              </div>
+              <div style="display: flex; align-items: center;">
+                <div style="display: flex; align-items: center;"class="green-box1">
+                  256GB
+                           </div>&nbsp;
+                           <div style="display: flex; align-items: center;"class="green-box">
+                            512GB
+                                     </div>
+                                     &nbsp;
+                                     <div style="display: flex; align-items: center;"class="green-box">
+                                      1T
+                                               </div>
+                </div> 
+                <div style="display: flex; align-items: center;margin-top: 10px;">
+                  <p>Giá tham khảo:</p>
+                  <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                  
+             </div>
+             <div style="margin-top: -15px; font-weight: normal;">
+              <ul class="ul2">
+                <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                <li>RAM: 8 GB</li>
+                <li>ROM: 256 GB</li>
+                <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                <li>Camera trước :12MP</li>
+                <li>Pin 5000 mAh ,sạc 45 W</li>
+            </ul>
+            </div>
+             <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star half">&#9733;</span>
+          </div>
+
+         
+            </p>
+            
+          
+        </div>
+    </div>
+</div>
+<!--  -->
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+    <div class="card image-container"><br>
+        <img src="Mi_13_Whitee.jpg" class="card-img-top hover-effectt" alt="..." >
+        <div class="card-body" style="height: 350px;">
+          <br>
+            <h5 class="card-title"><center><b>Xiaomi 13T 5G</b></center></h5>
+            <p class="card-text"> 
+             
+             
+              <div style="display: flex;">
+       <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+
+           <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+
+              </div>
+              <div style="display: flex; align-items: center;">
+                <div style="display: flex; align-items: center;"class="green-box1">
+                  256GB
+                           </div>&nbsp;
+                           <div style="display: flex; align-items: center;"class="green-box">
+                            512GB
+                                     </div>
+                                     &nbsp;
+                                     <div style="display: flex; align-items: center;"class="green-box">
+                                      1T
+                                               </div>
+                </div> 
+                <div style="display: flex; align-items: center;margin-top: 10px;">
+                  <p>Giá tham khảo:</p>
+                  <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                  
+             </div>
+             <div style="margin-top: -15px; font-weight: normal;">
+              <ul class="ul2">
+                <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                <li>RAM: 8 GB</li>
+                <li>ROM: 256 GB</li>
+                <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                <li>Camera trước :12MP</li>
+                <li>Pin 5000 mAh ,sạc 45 W</li>
+            </ul>
+            </div>
+             <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star half">&#9733;</span>
+          </div>
+
+         
+            </p>
+            
+          
+        </div>
+    </div>
+</div>
+<!--  -->
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+    <div class="card image-container"><br>
+        <img src="reno100.jpg" class="card-img-top hover-effectt" alt="..." >
+        <div class="card-body" style="height: 350px;">
+          <br>
+            <h5 class="card-title"><center><b>OPPO Reno10 5G</b></center></h5>
+            <p class="card-text"> 
+             
+             
+              <div style="display: flex;">
+       <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+
+           <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+
+              </div>
+              <div style="display: flex; align-items: center;">
+                <div style="display: flex; align-items: center;"class="green-box1">
+                  256GB
+                           </div>&nbsp;
+                           <div style="display: flex; align-items: center;"class="green-box">
+                            512GB
+                                     </div>
+                                     &nbsp;
+                                     <div style="display: flex; align-items: center;"class="green-box">
+                                      1T
+                                               </div>
+                </div> 
+                <div style="display: flex; align-items: center;margin-top: 10px;">
+                  <p>Giá tham khảo:</p>
+                  <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                  
+             </div>
+             <div style="margin-top: -15px; font-weight: normal;">
+              <ul class="ul2">
+                <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                <li>RAM: 8 GB</li>
+                <li>ROM: 256 GB</li>
+                <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                <li>Camera trước :12MP</li>
+                <li>Pin 5000 mAh ,sạc 45 W</li>
+            </ul>
+            </div>
+             <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star half">&#9733;</span>
+          </div>
+
+         
+            </p>
+            
+          
+        </div>
+    </div>
+</div>
+<!--  -->
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+    <div class="card image-container"><br>
+        <img src="a799.jpg" class="card-img-top hover-effectt" alt="..." >
+        <div class="card-body" style="height: 350px;">
+          <br>
+            <h5 class="card-title"><center><b>OPPO A79 5G</b></center></h5>
+            <p class="card-text"> 
+             
+             
+              <div style="display: flex;">
+       <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+
+           <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+
+              </div>
+              <div style="display: flex; align-items: center;">
+                <div style="display: flex; align-items: center;"class="green-box1">
+                  256GB
+                           </div>&nbsp;
+                           <div style="display: flex; align-items: center;"class="green-box">
+                            512GB
+                                     </div>
+                                     &nbsp;
+                                     <div style="display: flex; align-items: center;"class="green-box">
+                                      1T
+                                               </div>
+                </div> 
+                <div style="display: flex; align-items: center;margin-top: 10px;">
+                  <p>Giá tham khảo:</p>
+                  <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                  
+             </div>
+             <div style="margin-top: -15px; font-weight: normal;">
+              <ul class="ul2">
+                <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                <li>RAM: 8 GB</li>
+                <li>ROM: 256 GB</li>
+                <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                <li>Camera trước :12MP</li>
+                <li>Pin 5000 mAh ,sạc 45 W</li>
+            </ul>
+            </div>
+             <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star half">&#9733;</span>
+          </div>
+
+         
+            </p>
+            
+          
+        </div>
+    </div>
+</div>
+<!--  -->
+
+<!--  -->
+
+
+
+<!-- DDDDDDDDDDDDDDDDDDDDDDDDDDDDD -->
+
+<!--Bắt đầu  -->
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+    <div class="card image-container"><br>
+        <a href="#s24">                      <img src ="samsungs24bb.png" class="card-img-top hover-effectt" alt="..." >
+</a>
+         <div class="card-body" style="height: 350px;">
+           <br>
+             <h5 class="card-title"><center><b>Samsung S24 Ultra 5G</b></center></h5>
+             <p class="card-text"> 
+              
+              
+               <div style="display: flex;">
+        <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+
+            <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+
+               </div>
+               <div style="display: flex; align-items: center;">
+                 <div style="display: flex; align-items: center;"class="green-box1">
+                   256GB
+                            </div>&nbsp;
+                            <div style="display: flex; align-items: center;"class="green-box">
+                             512GB
+                                      </div>
+                                      &nbsp;
+                                      <div style="display: flex; align-items: center;"class="green-box">
+                                       1T
+                                                </div>
+                 </div> 
+                 <div style="display: flex; align-items: center;margin-top: 10px;">
+                   <p>Giá tham khảo:</p>
+                   <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                   
+              </div>
+              <div style="margin-top: -15px; font-weight: normal;">
+               <ul class="ul2">
+                 <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                 <li>RAM: 8 GB</li>
+                 <li>ROM: 256 GB</li>
+                 <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                 <li>Camera trước :12MP</li>
+                 <li>Pin 5000 mAh ,sạc 45 W</li>
+             </ul>
+             </div>
+              <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+               <span class="star1">&#9733;</span>
+               <span class="star1">&#9733;</span>
+               <span class="star1">&#9733;</span>
+               <span class="star1">&#9733;</span>
+               <span class="star half">&#9733;</span>
+           </div>
+
+          
+             </p>
+             
+           
+         </div>
+     </div>
+</div>
+<!--  -->
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+    <div class="card image-container"><br>
+        <img src="findn22.jpg" class="card-img-top hover-effectt" alt="..." >
+        <div class="card-body" style="height: 350px;">
+          <br>
+            <h5 class="card-title"><center><b>OPPO Find N2 Flip 5G</b></center></h5>
+            <p class="card-text"> 
+             
+             
+              <div style="display: flex;">
+       <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+
+           <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+
+              </div>
+              <div style="display: flex; align-items: center;">
+                <div style="display: flex; align-items: center;"class="green-box1">
+                  128GB
+                           </div>&nbsp;
+                           <div style="display: flex; align-items: center;"class="green-box">
+                            256GB
+                                     </div>
+                                     &nbsp;
+                                    
+                </div> 
+                <div style="display: flex; align-items: center;margin-top: 10px;">
+                  <p>Giá tham khảo:</p>
+                  <p style="color: red;font-size: 18px;">&nbsp; 18.990.000</p>
+                  
+             </div>
+             <div style="margin-top: -15px; font-weight: normal;">
+              <ul class="ul2">
+               <li>Màn hình phụ 3.26"</li>
+                <li>Chip MediaTek Dimensity 9000+ 8 nhân</li>
+                <li>RAM: 8 GB</li>
+                <li>ROM: 256 GB</li>
+                <li>Camera sau :Chính 50 MP & Phụ 8 MP</li>
+                <li>Camera trước :32MP</li>
+                <li>Pin 4300 mAh ,sạc 44 W</li>
+            </ul>
+            </div>
+             <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star half">&#9733;</span>
+          </div>
+
+         
+            </p>
+            
+          
+        </div>
+    </div>
+</div>
+<!--  -->
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+    <div class="card image-container"><br>
+        <img src="opponeno111.jpg" class="card-img-top hover-effectt" alt="..." >
+        <div class="card-body" style="height: 350px;">
+          <br>
+            <h5 class="card-title"><center><b>OPPO Reno11 Pro 5G </b></center></h5>
+            <p class="card-text"> 
+             
+             
+              <div style="display: flex;">
+       <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+
+           <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+
+              </div>
+              <div style="display: flex; align-items: center;">
+                <div style="display: flex; align-items: center;"class="green-box1">
+                  256GB
+                           </div>&nbsp;
+                           <div style="display: flex; align-items: center;"class="green-box">
+                            512GB
+                                     </div>
+                                     &nbsp;
+                                     <div style="display: flex; align-items: center;"class="green-box">
+                                      1T
+                                               </div>
+                </div> 
+                <div style="display: flex; align-items: center;margin-top: 10px;">
+                  <p>Giá tham khảo:</p>
+                  <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                  
+             </div>
+             <div style="margin-top: -15px; font-weight: normal;">
+              <ul class="ul2">
+                <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                <li>RAM: 8 GB</li>
+                <li>ROM: 256 GB</li>
+                <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                <li>Camera trước :12MP</li>
+                <li>Pin 5000 mAh ,sạc 45 W</li>
+            </ul>
+            </div>
+             <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star half">&#9733;</span>
+          </div>
+
+         
+            </p>
+            
+          
+        </div>
+    </div>
+</div>
+<!--  -->
+<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+    <div class="card image-container"><br>
+        <img src="reno11ff.png" class="card-img-top hover-effectt" alt="..." >
+        <div class="card-body" style="height: 350px;">
+          <br>
+            <h5 class="card-title"><center><b> OPPO Reno11 F 5G </b></center></h5>
+            <p class="card-text"> 
+             
+             
+              <div style="display: flex;">
+       <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+
+           <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+
+              </div>
+              <div style="display: flex; align-items: center;">
+                <div style="display: flex; align-items: center;"class="green-box1">
+                  256GB
+                           </div>&nbsp;
+                           <div style="display: flex; align-items: center;"class="green-box">
+                            512GB
+                                     </div>
+                                     &nbsp;
+                                     <div style="display: flex; align-items: center;"class="green-box">
+                                      1T
+                                               </div>
+                </div> 
+                <div style="display: flex; align-items: center;margin-top: 10px;">
+                  <p>Giá tham khảo:</p>
+                  <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                  
+             </div>
+             <div style="margin-top: -15px; font-weight: normal;">
+              <ul class="ul2">
+                <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                <li>RAM: 8 GB</li>
+                <li>ROM: 256 GB</li>
+                <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                <li>Camera trước :12MP</li>
+                <li>Pin 5000 mAh ,sạc 45 W</li>
+            </ul>
+            </div>
+             <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star1">&#9733;</span>
+              <span class="star half">&#9733;</span>
+          </div>
+
+         
+            </p>
+            
+          
+        </div>
+    </div>
+</div>
+
+<br>
+&nbsp;
+
+<div style="display: flex; justify-content: center;">
+
+    <button style="width: auto; background-color: rgb(35, 198, 235); border-radius: 25px;height: 40px;"><a href="" style="display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;">Trang 1</a>
+    </button>&nbsp;&nbsp;
+    <button style="width: auto; background-color: rgb(192, 203, 200); border-radius: 25px;height: 40px;"><a href="test4.html" style="display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;">Trang 2</a>
+    </button>&nbsp;&nbsp;
+    <button style="width: auto; background-color: rgb(192, 203, 200); border-radius: 25px;height: 40px;"><a href="test5.html" style="display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;">Trang 3</a>
+    </button>
+   
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+     <div style="background-color:#E5F7FF ;">
+       <div class="container">
+     <div class="row">
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2"><center><img src="caheo.png" alt="" style="width: 120px;"></center></div>
+          <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10"><p style="font-size: 33px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight: 20px;"> BIG WHALE</p>
+         <p style="margin-top: 5px;font-size: 18px;">Tự hào là trang web cung cấp thông chính xác và nhanh nhất về các sản phẩm công nghệ.</p>
+         &copy; shopsmartphone.com | Designed by PhanVanSon</p></div>
+     </div>
+       </div>
+     
+     
+       
+     
+             <div class="container">
+               <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 " style="backdrop-filter: blue;"><p><center style="font-size: 22px;">Liên hệ chúng tôi qua</center></p>
+                     <center>   <button style="width: 250px; background-color: rgb(99, 171, 208); border-radius: 25px;height: 40px;"><a href="https://www.facebook.com/mtpyps.tungbinh" style="display: block;
+                       text-align: center;
+                       text-decoration: none;
+                       color: white;">Facebook</a></button></center> <br>
+                         <center>   <button style="width: 250px; background-color: rgb(75, 155, 247); border-radius: 25px;height: 40px;"><a href="https://www.w3schools.com/bootstrap5/bootstrap_buttons.php" style="display: block;
+                           text-align: center;
+                           text-decoration: none;
+                           color: white;">Zalo : 0387888999</a></button></center> <br>
+                             <center>   <button style="width: 250px; background-color: rgb(237, 138, 207); border-radius: 25px;height: 40px;"><a href="https://www.instagram.com/" style="display: block;
+                               text-align: center;
+                               text-decoration: none;
+                               color: white;">Instagram : big_whale</a></button></center>
+                   </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 " ><p><center style="font-size: 22px;">BIG WHALE</center></p>
+                   <center><p>Địa chỉ : <a href="https://www.google.com/maps/search/%C4%91%E1%BA%A1i+h%E1%BB%8Dc+Vi%E1%BB%87t+H
+                     %C3%A0n/@15.9765027,108.2500434,17z/data=!3m1!4b1?entry=ttu">470-Trần Hưng Đạo</a></p></center>
+                     <center><p>Số điện thoại liên hệ 1: 0392176320</p></center>
+                     <center><p>Số điện thoại liên hệ 2: 0394126584</p></center>
+                     <center><p>Email : bigwhale0810@gmail.com</p></center></div>
+               </div>
+             </div>
+     </div>
+    </div>
+ </div>
+ 
+ 
+ 
+ 
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        var lastScrollTop = 0;
+        window.addEventListener("scroll", function(){ // Bắt sự kiện scroll
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop; // Lấy vị trí scroll hiện tại của trang
+    
+            if (currentScroll > lastScrollTop){ // Nếu đang cuộn xuống
+                document.getElementById("mauhong").style.top = "-80px"; // Ẩn thanh menu
+            } else { // Nếu đang cuộn lên
+                document.getElementById("mauhong").style.top = "0"; // Hiển thị thanh menu
+            }
+            lastScrollTop = currentScroll; // Lưu vị trí scroll hiện tại để so sánh ở lần cuộn tiếp theo
+        }, false);
+    </script>
+</body>
+</html>

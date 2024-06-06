@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css2.css">
+    <style>
+        /* .navbar {
+            transition: top 0.3s ease;
+            
+            top: 0; 
+        } */
+        .flexx{
+            display: flex;
+        }
+
+        /* .navbar.hidden {
+            top: -106px;
+        } */
+        .container {
+            max-width: 1500px; /* Kích thước tối đa của container */
+            margin: 0 auto; /* Canh giữa container */
+            padding: 20px; /* Khoảng cách nội dung với viền của container */
+        }
+        .CHUTO{
+            font-size: 39px;
+            font-weight: 500;
+        }
+        .button2 {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 200px;
+            height: 50px;
+        }
+        /* CSS cho thanh menu */
+/* .thanhmenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 9999; 
+} */
+
+.chonlua {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .an {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .hien {
+            max-height: 1000px;
+            transition: max-height 0.3s ease-in;
+        }
+
+        .nutxem {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 200px;
+            height: 50px;
+        }
+        
+        .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 9999; /* Đảm bảo thanh menu hiển thị trên cùng */
+}
+
+.navbar.hidden {
+    top: -100px; /* Ẩn thanh menu khi cuộn lên */
+}
+        /* button:hover {
+            background-color: rgba(34, 33, 33, 0.5);
+
+        } */
+    </style>
+</head>
+<body>
+  <div style="background-color: aqua;">
+
+  
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="mauhong">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="0" class="chu1">SMART PHONE</a> -->
+          <img src="icon1.png" alt="" class="navbar-brand" style="width: 68px;height:80px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             
+                <li class="nav-item">
+                    <a class="nav-link" href="">IOS</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#android">Android</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Phụ kiện
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Ốp lưng</a></li>
+                  <li><a class="dropdown-item" href="#">Dây sạc ,cáp sạc</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Khác</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+      <div class="slidee">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                
+                <img src="trang.jpg" class="d-block w-100" alt="...">
+                <!-- <img src="sss24.jpeg" alt="Your Image" class="d-block w-100"> -->
+                <!-- <video class="video-overlay d-block w-100" autoplay loop muted>
+                    <source src="tuyetbay.mp4" type="video/mp4">
+                </video> -->
+
+
+
+                <video class="video-overlay d-block w-100" autoplay loop muted>
+                  <source src="trailerip15.mp4" type="video/mp4">
+                </video>
+            
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 style="font-size: 90px;">iPhone 15</h1>
+                  <p id="s24" style="font-size: 30px;">Apple ra mắt iPhone 15 và iPhone 15 Plus</p>
+                  
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="trang.jpg" class="d-block w-100" alt="...">
+
+                <video class="video-overlay d-block w-100" autoplay loop muted>
+                  <source src="trailerss.webm" type="video/mp4">
+                </video>
+
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="font-size: 60px;">Samsung s24 Ultra</h5>
+                  <p style="font-size: 30px;">Siêu phẩm Samsung Galaxy S24 Ultra Chính hãng chính thức ra mắt trên toàn cầu vào 1/2024. 
+                    Thiết bị sở hữu cấu hình siêu khủng với các tính năng AI hiện đại và cao cấp nhất thế giới smartphone.</p>
+                </div>
+              </div>
+             
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      </div>
+
+
+      <div class="container">
+        <section class="myheader">
+            <!-- Nội dung phần header -->
+        </section>
+    
+        <section class="mymainmenu">
+            <!-- Nội dung phần main menu -->
+        </section>
+    
+        <section class="mymaincontent">
+            <!-- Nội dung phần main content -->
+        </section>
+    
+        <section class="myfooter">
+           
+    
+     <!-- Nội dung phần footer -->
+        </section>
+         <div class="flexx">
+          <div style="width: 2000px;height: 800px;"> 
+            <div class="card">
+                <img src="samsungs24.png" class="card-img-top hover-effectt" alt="..." >
+                <div class="card-body" style="height: 377px;">
+                    <h5 class="card-title">Sản phẩm bán chạy tháng 5: Samsung s24 Ultra </h5>
+                    <p style="text-align: justify;" class="card-text"  >Chiêm ngưỡng thiết kế sang trọng được nâng cấp của Galaxy S24 Ultra - một tấm titan bền bỉ mạnh mẽ được gắn vào khung viền
+                    .Samsung S24 Ultra là siêu phẩm smartphone đỉnh cao mở đầu năm 2024 đến từ nhà Samsung với chip Snapdragon 8 Gen 3 For Galaxy mạnh mẽ, công nghệ tương lai Galaxy AI cùng khung viền Titan đẳng cấp hứa hẹn sẽ mang tới nhiều sự thay đổi lớn về mặt thiết kế và cấu hình. SS Galaxy S24 bản Ultra sở hữu màn hình 6.8 inch Dynamic AMOLED 2X tần số quét 120Hz. Máy cũng sở hữu camera chính 200MP, camera zoom quang học 50MP, camera tele 10MP và camera góc siêu rộng 12MP.</p>
+                    <p style="margin-top: 20px;">Nhìn chung, phiên bản Ultra của S24 hứa hẹn sẽ trở thành lựa chọn hấp dẫn trong phân khúc smartphone cao cấp với các cải tiến đáng chú ý cả về màn hình, hiệu suất, camera và thời lượng PIN. Hãy cùng đi vào chi tiết nhé.</p>
+                    
+                    <!-- <a href="https://www.samsung.com/vn/smartphones/galaxy-s24-ultra/specs/" class="btn btn-primary">Xem thêm về thông số kỹ thuật</a> -->
+                </div>
+            </div>
+    
+          </div>
+          &nbsp;&nbsp;
+            <div class="card">
+                <img src="samsungs24a.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Thông số kỹ thuật Samsung S24 ULtra</h5>
+                    <p class="card-text">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col"></th>
+                                <th scope="col">STT</th>
+                                <th scope="col">Thành phần</th>
+                                <th scope="col">Cấu hình</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row"></th>
+                                <td>1</td>
+                                <td>Màn hình</td>
+                                <td>6.8" inch-Dynamic AMOLED 2X,Tần số quét 120Hz</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"></th>
+                                <td>2</td>
+                                <td>Hệ điều hành</td>
+                                <td>Android 14</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"></th>
+                                <td>3</td>
+                                <td>Camera sau</td>
+                                <td>Chính 200 MP & Phụ 50 MP, 12 MP, 10 MP</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"></th>
+                                <td>4</td>
+                                <td>Camera trước</td>
+                                <td>12 MP</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"></th>
+                                <td>5</td>
+                                <td>Chip</td>
+                                <td>Snapdragon 8 Gen 3 for Galaxy</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"></th>
+                                <td>6</td>
+                                <td>RAM</td>
+                                <td>12 GB</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"></th>
+                                <td>7</td>
+                                <td>ROM</td>
+                                <td>256 GB</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"></th>
+                                <td>8</td>
+                                <td>Pin, Sạc </td>
+                                <td>5000 mAh, 45 W</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"></th>
+                                <td>9</td>
+                                <td>Tương thích </td>
+                                <td>Bút SPEN - tích hợp sẵn lên máy</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"></th>
+                                <td>10</td>
+                                <td>Hãng </td>
+                                <td id="android">Samsung </td>
+                              </tr>
+    
+                             
+                            </tbody>
+                          </table>
+                    </p>
+                    <!-- <a href="https://www.samsung.com/vn/smartphones/galaxy-s24-ultra/specs/" class="btn btn-primary" id="android">Xem thêm về thông số kỹ thuật</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+<br ><br>
+
+      <DIV CLASS="CHUTO">
+ <center>
+    ĐÓN CHÀO SIÊU PHẨM ĐẾN TỪ THẾ GIỚI <P style="color: green;">ANDROID </P>
+ </center>
+      </DIV>
+
+
+      
+      <div id="noidung">
+        <div>
+            <center><table>
+                <tr>
+                 <th style="height:200px; width: 270px;">
+
+
+
+                   <div class="card image-container"><br>
+                    <a href="#s24">                      <img src ="samsungs24bb.png" class="card-img-top hover-effectt" alt="..." >
+</a>
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>Samsung S24 Ultra 5G</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               256GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         512GB
+                                                  </div>
+                                                  &nbsp;
+                                                  <div style="display: flex; align-items: center;"class="green-box">
+                                                   1T
+                                                            </div>
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                             <li>Camera trước :12MP</li>
+                             <li>Pin 5000 mAh ,sạc 45 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 
+                 </th>
+                
+                 <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="findn22.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>OPPO Find N2 Flip 5G</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               128GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         256GB
+                                                  </div>
+                                                  &nbsp;
+                                                 
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 18.990.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                            <li>Màn hình phụ 3.26"</li>
+                             <li>Chip MediaTek Dimensity 9000+ 8 nhân</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :Chính 50 MP & Phụ 8 MP</li>
+                             <li>Camera trước :32MP</li>
+                             <li>Pin 4300 mAh ,sạc 44 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                 <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="opponeno111.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>OPPO Reno11 Pro 5G </b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               256GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         512GB
+                                                  </div>
+                                                  &nbsp;
+                                                  <div style="display: flex; align-items: center;"class="green-box">
+                                                   1T
+                                                            </div>
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                             <li>Camera trước :12MP</li>
+                             <li>Pin 5000 mAh ,sạc 45 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                  <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="reno11ff.png" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b> OPPO Reno11 F 5G </b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               256GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         512GB
+                                                  </div>
+                                                  &nbsp;
+                                                  <div style="display: flex; align-items: center;"class="green-box">
+                                                   1T
+                                                            </div>
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                             <li>Camera trước :12MP</li>
+                             <li>Pin 5000 mAh ,sạc 45 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                  <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="remi11.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b> Redmi Note 13 Pro</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               256GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         512GB
+                                                  </div>
+                                                  &nbsp;
+                                                  <div style="display: flex; align-items: center;"class="green-box">
+                                                   1T
+                                                            </div>
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                             <li>Camera trước :12MP</li>
+                             <li>Pin 5000 mAh ,sạc 45 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+                 
+                </tr>
+                <tr>
+                 <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="Mi_13_Whitee.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>Xiaomi 13T 5G</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               256GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         512GB
+                                                  </div>
+                                                  &nbsp;
+                                                  <div style="display: flex; align-items: center;"class="green-box">
+                                                   1T
+                                                            </div>
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                             <li>Camera trước :12MP</li>
+                             <li>Pin 5000 mAh ,sạc 45 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                  <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="reno100.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>OPPO Reno10 5G</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               256GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         512GB
+                                                  </div>
+                                                  &nbsp;
+                                                  <div style="display: flex; align-items: center;"class="green-box">
+                                                   1T
+                                                            </div>
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                             <li>Camera trước :12MP</li>
+                             <li>Pin 5000 mAh ,sạc 45 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                  <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="a799.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>OPPO A79 5G</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               256GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         512GB
+                                                  </div>
+                                                  &nbsp;
+                                                  <div style="display: flex; align-items: center;"class="green-box">
+                                                   1T
+                                                            </div>
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                             <li>Camera trước :12MP</li>
+                             <li>Pin 5000 mAh ,sạc 45 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                  <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="vivoy1000.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>VIVO Y100</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               256GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         512GB
+                                                  </div>
+                                                  &nbsp;
+                                                  <div style="display: flex; align-items: center;"class="green-box">
+                                                   1T
+                                                            </div>
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                             <li>Camera trước :12MP</li>
+                             <li>Pin 5000 mAh ,sạc 45 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                  <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="zphone55.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>Samsung Galaxy Z Fold5</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               256GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         512GB
+                                                  </div>
+                                                  &nbsp;
+                                                  <div style="display: flex; align-items: center;"class="green-box">
+                                                   1T
+                                                            </div>
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 28.290.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                             <li>Camera trước :12MP</li>
+                             <li>Pin 5000 mAh ,sạc 45 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+                </tr>
+               </table></center>
+        </div>
+        
+    </div>
+
+    <div id="them" class="an">
+        <div>
+            <center><table>
+                <tr>
+                 <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="c677.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>Realme C67 4G</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">IPS LCD </span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               128GB
+                                        </div>&nbsp;
+                                        
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 4.790.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                             <li>Camera trước :12MP</li>
+                             <li>Pin 5000 mAh ,sạc 45 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+                
+                 <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="m544.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>Samsung Galaxy M54 5G</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               128GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         256GB
+                                                  </div>
+                                                  &nbsp;
+                                                  
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 4.890.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Exynos 1380</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 128 GB</li>
+                             <li>Camera sau :chính 108MP &phụ 8MP,2MP</li>
+                             <li>Camera trước :32MP</li>
+                             <li>Pin 6000 mAh ,sạc 25 W</li>
+                             &nbsp;
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                 <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="a988.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>OPPO A98 5G</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               256GB
+                                        </div>&nbsp;
+                                     
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 7.990.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 695 5G</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 64MP &phụ 2MP,2MP</li>
+                             <li>Camera trước :32MP</li>
+                             <li>Pin 5000 mAh ,sạc 67 W</li>
+                             &nbsp;
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                  <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="rog77.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>ASUS ROG Phone 7 </b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.78"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               256GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         512GB
+                                                  </div>
+                                                  &nbsp;
+                                                
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 14.450.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 8 gen 2 </li>
+                             <li>RAM: 12 GB/16 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 50MP &phụ 13MP,8MP</li>
+                             <li>Camera trước :32MP</li>
+                             <li>Pin 6000 mAh ,sạc 65 W</li>
+                             &nbsp;
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                  <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="s22aa.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>Samsung S22 Ultra</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">AMOLED 2X</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               128GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         256GB
+                                                  </div>
+                                                  &nbsp;
+                                                  <div style="display: flex; align-items: center;"class="green-box">
+                                                   512
+                                                            </div>
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 17.990.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 8 gen 1 </li>
+                             <li>RAM: 12 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 108MP &phụ 12MP,10MP,10MP</li>
+                             <li>Camera trước :40MP</li>
+                             <li>Pin 5000 mAh </li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+                 
+                </tr>
+                <tr>
+                 <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="a344.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>Samsung Galaxy A34 5G</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.6"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">Super AMOLED</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               128GB
+                                        </div>&nbsp;
+                                       
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 7.090.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Dimensity 1080</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 128 GB</li>
+                             <li>Camera sau :chính 48MP &phụ 8MP,5MP</li>
+                             <li>Camera trước :12MP</li>
+                             <li>Pin 5000 mAh </li>
+                             &nbsp;
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                  <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="reno7.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>Oppo Reno 7 Z (5G)</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.43"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               128GB
+                                        </div>&nbsp;
+                                       
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 7.290.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 695 5G</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 126 GB</li>
+                             <li>Camera sau :chính 64MP &phụ 12MP,10MP,10MP</li>
+                             <li>Camera trước :12MP</li>
+                             <li>Pin 5000 mAh ,sạc 45 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                  <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="mi122.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b> Xiaomi Redmi 12 </b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.79"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               128GB
+                                        </div>&nbsp;
+                                        
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 3.430.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip MediaTek Helio G88</li>
+                             <li>RAM: 4 GB</li>
+                             <li>ROM: 128 GB</li>
+                             <li>Camera sau :chính 50MP &phụ 8MP,2MP</li>
+                             <li>Camera trước :8MP</li>
+                             <li>Pin 5000 mAh ,sạc 18 W</li>
+                             &nbsp;
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                  <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="12ss.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>Xiaomi 12S Pro</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.73"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">LTPO AMOLED</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               128GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         256GB
+                                                  </div>
+                                                  &nbsp;
+                                                  <div style="display: flex; align-items: center;"class="green-box">
+                                                   512T
+                                                            </div>
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 10.950.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Qualcomm SM8475 Snapdragon 8+ Gen 1</li>
+                             <li>RAM: 8 GB/12 GB</li>
+                             <li>ROM: 128 GB</li>
+                             <li>Camera sau :chính 50MP &phụ 50MP,50MP</li>
+                             <li>Camera trước :32MP</li>
+                             <li>Pin 4600 mAh ,sạc 120 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                  <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="s233.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>Samsung S23 Ultra </b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.8"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">Quad HD+(2K+)</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               256GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         512GB
+                                                  </div>
+                                                  &nbsp;
+                                                
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 24.990.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Snapdragon 8 gen 2 for Galaxy</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 200MP &phụ 12MP,10MP,10MP</li>
+                             <li>Camera trước :12MP</li>
+                             <li>Pin 5000 mAh ,sạc 45 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+                </tr>
+               </table>
+               <table>
+                <tr>
+                 <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="11proo.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>Realme 11 Pro+ 5G</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.7"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               256GB
+                                        </div>&nbsp;
+
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 7.150.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip MediaTek Dimensity 7050 5G 8 nhân</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 100MP &phụ 2MP</li>
+                             <li>Camera trước :16MP</li>
+                             <li>Pin 5000 mAh ,sạc 67 W</li>
+                             &nbsp;
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+                
+                 <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="redmi100.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>Realme 10 Pro Plus</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.7"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">AMOLED</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               128GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         256GB
+                                                  </div>
+                                                  &nbsp;
+                                                  
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 4.750.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip MediaTek Dimensity 1080 </li>
+                             <li>RAM: 8 GB/12 GB</li>
+                             <li>ROM: 128 GB</li>
+                             <li>Camera sau :chính 108MP &phụ 8MP,2MP</li>
+                             <li>Camera trước :16MP</li>
+                             <li>Pin 5000 mAh ,sạc 67 W</li>
+                             &nbsp;
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                 <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="rog6.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>ROG Phone 6 Pro</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.78"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+(1 tỷ màu) </span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               512GB
+                                        </div>&nbsp;
+                                       
+                                                  &nbsp;
+                                                
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 11.550.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip Qualcomm SM8475 Snapdragon 8+ Gen 1 (4 nm)</li>
+                             <li>RAM: 18 GB</li>
+                             <li>ROM: 512 GB</li>
+                             <li>Camera sau :chính 50MP &phụ 13MP,5MP</li>
+                             <li>Camera trước :12MP</li>
+                             <li>Pin 6000 mAh ,sạc 65 W</li>
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                  <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="reno6.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>OPPO Reno6 </b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.43"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               128GB
+                                        </div>&nbsp;
+                                       
+                                                  
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 8.990.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip MediaTek Dimensity 900 5G</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 128 GB</li>
+                             <li>Camera sau :chính 64MP &phụ 8MP,2MP</li>
+                             <li>Camera trước :32MP</li>
+                             <li>Pin 4300 mAh ,sạc 65 W</li>
+                             &nbsp;
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+       
+                  <th style="height:200px; width: 270px;">
+                   <div class="card image-container"><br>
+                     <img src="reno11ff.jpg" class="card-img-top hover-effectt" alt="..." >
+                     <div class="card-body" style="height: 350px;">
+                       <br>
+                         <h5 class="card-title"><center><b>Oppo Reno 11F</b></center></h5>
+                         <p class="card-text"> 
+                          
+                          
+                           <div style="display: flex;">
+                    <h5>   <span class="badge text-bg-secondary">6.7"</span></h5> &nbsp;&nbsp;
+           
+                        <h5>   <span class="badge text-bg-secondary">FULL HD+</span></h5>
+           
+                           </div>
+                           <div style="display: flex; align-items: center;">
+                             <div style="display: flex; align-items: center;"class="green-box1">
+                               256GB
+                                        </div>&nbsp;
+                                        <div style="display: flex; align-items: center;"class="green-box">
+                                         512GB
+                                                  </div>
+                                                  &nbsp;
+                                                 
+                             </div> 
+                             <div style="display: flex; align-items: center;margin-top: 10px;">
+                               <p>Giá tham khảo:</p>
+                               <p style="color: red;font-size: 18px;">&nbsp; 8.690.000</p>
+                               
+                          </div>
+                          <div style="margin-top: -15px; font-weight: normal;">
+                           <ul class="ul2">
+                             <li>Chip MediaTek Dimensity 7050 5G 8 nhân</li>
+                             <li>RAM: 8 GB</li>
+                             <li>ROM: 256 GB</li>
+                             <li>Camera sau :chính 64MP &phụ 8MP,2MP</li>
+                             <li>Camera trước :32MP</li>
+                             <li>Pin 5000 mAh ,sạc 67 W</li>
+                             &nbsp;
+                         </ul>
+                         </div>
+                          <div class="star-rating" style="margin-top: -15px;font-size: 19px;"> Đánh giá :
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star1">&#9733;</span>
+                           <span class="star half">&#9733;</span>
+                       </div>
+           
+                      
+                         </p>
+                         
+                       
+                     </div>
+                 </div>
+                 </th>
+                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 
+                </tr>
+            
+               </table></center>
+        </div>
+        
+    </div>
+  
+<br> 
+
+    <center>
+        <button onclick="chuyendoiNoiDung()" class="nutxemm">Xem thêm</button>
+    </center>
+    
+
+        
+      
+  
+      <script src="js/bootstrap.bundle.js">
+  
+      </script>
+      <script>
+        function chuyendoiNoiDung() {
+           
+
+        
+        
+            var noiDungThem = document.getElementById("them");
+            var nut = document.querySelector(".nutxemm"); // Sửa lại chọn class nutxem
+
+            if (noiDungThem.classList.contains("an")) {
+                var chieuCao = noiDungThem.scrollHeight;
+                noiDungThem.style.maxHeight = chieuCao + "px";
+                noiDungThem.classList.remove("an");
+                noiDungThem.classList.add("hien");
+                nut.textContent = "Ẩn bớt ";
+            } else {
+                noiDungThem.style.maxHeight = "0";
+                noiDungThem.classList.remove("hien");
+                noiDungThem.classList.add("an");
+                nut.textContent = "Xem thêm";
+            }
+
+            var lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                document.querySelector(".navbar").classList.add("hidden");
+            } else {
+                document.querySelector(".navbar").classList.remove("hidden");
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        }, false);
+        }
+    </script>
+</body>
+</html>
